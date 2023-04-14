@@ -1,0 +1,119 @@
+.topbar {
+  display: flex;
+  justify-content: space-evenly;
+  height: 10px;
+}
+.topbar a {
+  text-decoration: none;
+}
+
+a .t1 {
+  font-family: "sofia";
+  /* border: black solid .6px; */
+  color: green;
+  padding-right: 50px;
+  margin: -6px;
+}
+
+.topbar2 {
+  display: flex;
+  justify-content: space-between center;
+  height: 36px;
+  border-radius: 60px;
+}
+
+a .tp1 {
+  text-decoration: none;
+  margin: 0.8px;
+  font-family: "sofia";
+}
+
+.topbar2 #tp2 {
+  margin-left: 300px;
+  font-family: "sofia";
+  width: 700px;
+}
+
+.topbar2 .tp2 {
+  margin-left: 290px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  a .t1 {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+.topbar2 .tp6 {
+  background-color: blue;
+  color: azure;
+}
+
+.bd img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bd2 img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  padding: 20px;
+}
+.bd2 {
+  display: flex;
+  justify-content: space-evenly;
+  color: azure;
+  margin-bottom: 0px;
+}
+
+.ft{
+  font-family: "sofia";
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: whitesmoke;
+    
+}
+
+.img1 {
+  border: 1px solid black;
+  margin: 3px;
+}
+
+.topbar2 .tp1 {
+  margin-left: 40px;
+}
+
+.topbar2 .tp2 {
+  margin-right: 40px;
+}
+
+.siginform .username {
+  font-family: "Times New Roman";
+  display: grid;
+  align-items: center;
+  padding: 10px;
+  margin-right: auto;
+}
+
+.siginform .username input {
+  display: grid;
+  align-items: center;
+  padding: 10px;
+  margin-right: auto;
+  border-radius: 70px;
+}
+
+body{
+  min-height: 100vh;
+}
+
+
+.fontsize{
+  font-size:20px;
+  color: brown;
+}

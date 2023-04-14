@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content  %}
+<h1>womens</h1>
+<a href="{% url 'add_women_item' %}">add item</a>
+{% for women in womens %}
+<div>
+    <img src="{{ women.image.url }}" alt="" width="220px" height="300px">
+    <p><h1>{{ women.brand }}</h1></p>
+    <p><h1>{{ women.price }}</h1></p>
+    <a href="{% url 'delete_women_item' women.id %}">delete item</a><br>
+    <a href="{% url 'update_women_item' women.id %}">update item</a>
+</div>
+{% endfor %}
+
+{% endblock  %}

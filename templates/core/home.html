@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+    <div class="bd" width="fill">
+        
+        <a href=""><img src="{{item.image.url}}" alt="" ></a> 
+       
+    </div><hr>
+    <div class="bd2">
+        <a href="{% url 'mens' %}"><img src="{% static 'images/md-salman-tWOz2_EK5EQ-unsplash.jpg' %}" alt="" class="img1"></a>
+        <a href="{% url 'womens' %}"><img src="{% static 'images/paul-gaudriault-a-QH9MAAVNI-unsplash_96bSNOf.jpg' %}" alt="" class="img1"></a>
+        <a href="{% url 'trending' %}"><img src="{% static 'images/zoe-ywgxkUJgSF8-unsplash.jpg' %}" alt="" class="img1"></a>
+
+    </div><hr>
+
+
+{% endblock %}
+    
+    
+         
+        
+        
+        
+        
+       
+    
+
+    
+

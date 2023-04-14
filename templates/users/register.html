@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+
+{% block content  %}
+<p>
+    <div>
+        <h1>create account</h1>
+    </div>
+</p>
+<div class="signinform">
+    <form action="{% url 'register' %}" method="POST">
+        {% csrf_token %}
+        <div class="siginform">
+            <div class="username">
+                <label for="">username</label>
+                <input type="text" placeholder="enter username" name="username">
+            </div>
+            <div class="username"  >
+                <label for="">email</label>
+                <input type="email" placeholder="enter email" name="email">
+            </div>
+            <div class="username">
+                <label for="">password</label>
+                <input type="password" name="password">
+            </div>
+            <div class="username">
+                <label for="">confirm password</label>
+                <input type="password" name="password2">
+            </div>
+            <div class="username">
+                <a href=""><input type="submit" value="signup"></a>
+            </div> 
+        </div>                                                                    
+    </form>    
+</div>
+
+
+
+
+{% endblock  %}
