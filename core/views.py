@@ -5,7 +5,7 @@ from .forms import *
 
 # Create your views here.
 def home(request):
-    item = Item.objects.all()[2]
+    item = Item.objects.all()
     context = {'item':item}  
     return render(request,'core/home.html', context)
 
