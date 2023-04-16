@@ -1,6 +1,14 @@
 <div class="topbar" >
-    <a href="{% url 'register' %}"><ul class="t1">Hello,Register</ul></a>
-    <a href="{% url 'login' %}"><ul class="t1">Signin</ul></a>
+    <a href="{% url 'register' %}"><ul class="t1">Register</ul></a>
+    {% if request.user.is_authenticated%}
+    <div>
+        <a href="{% url 'logout' %}"><ul class="t1">logout</ul></a>
+    </div>
+    {% else %}
+    <div>
+        <a href="{% url 'login' %}"><ul class="t1">Signin</ul></a>
+    </div>
+    {% endif %}
     <a href=""><ul class="t1">Daily Deals</ul></a>
     <a href=""><ul class="t1">Brand Outlet</ul></a>
     <a href=""><ul class="t1">Help & Contact</ul></a>
@@ -11,5 +19,7 @@
     <a href=" {% url 'home' %}"><h1 class="tp1">TOPSHOP</h1></a>
     <input type="text" name="" id="tp2" placeholder="search for anything" class="">
     <input type="button" value="search" class="tp6">
+    
+
     
 </div><hr>
