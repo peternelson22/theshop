@@ -70,13 +70,13 @@ a .tp1 {
   margin-bottom: 0px;
 }
 
-.ft{
+.ft {
   font-family: "sofia";
   display: flex;
   justify-content: space-around;
   background-color: black;
   color: whitesmoke;
-    
+  margin-top: 100vh;
 }
 
 .img1 {
